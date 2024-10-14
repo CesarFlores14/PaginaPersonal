@@ -1,0 +1,84 @@
+.contenedor{
+    padding: 5px;
+    background-color: aliceblue;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 0.3fr 0.3fr 6fr 0.3fr;
+    grid-template-areas: "header header"
+                         "nav    nav"
+                         "contenido ads"
+                         "footer footer";
+}
+.contenedor .header
+{
+    grid-area:header;
+    background-color:rgb(10, 146, 101);
+}
+.contenedor .nav
+{
+    grid-area: nav;
+    background-color: rgb(102, 221, 162);
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente si es necesario */
+}
+.contenedor .contenido
+{
+    background-color: aquamarine;
+    grid-area: contenido;
+}
+.contenedor .contenidob
+{
+    background-color: aquamarine;
+    grid-area: contenido;
+    display: flex;
+    align-items: center;
+}
+.contenedor .contenidom
+{
+    background-color: aquamarine;
+    grid-area: contenido;
+    display: flex;
+    align-items: center;
+}
+.contenedor .contenidop
+{
+    background-color: aquamarine;
+    grid-area: contenido;
+    display: flex;
+    align-items: center;
+}
+.contenedor .ads
+{
+    background-color:rgb(62, 184, 178);
+    grid-area: ads;
+}
+.contenedor .footer
+{
+    background-color: rgb(0, 119, 109);
+    grid-area: footer;
+    display: flex; /* Usar flexbox en el contenedor */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente si es necesario */
+    padding: 20px; /* Opcional: espaciado dentro del footer */
+    
+}
+h1 {
+    font-family: 'Montserrat', sans-serif; /* Fuente moderna para títulos */
+    font-size: 3em; /* Ajustar tamaño del título */
+    font-weight: 700; /* Negrita para resaltar */
+    text-align: center; /* Centrar el texto */
+    letter-spacing: 2px; /* Espaciado entre letras para mejor lectura */
+    color: #000000; /* Color oscuro para el texto */
+    margin: 20px 0; /* Espaciado alrededor del título */
+}
+
+
+.btn-group {
+    display: flex; /* Mantener los botones en línea */
+}
+
+.btn {
+    margin: 0 10px; /* Espacio entre los botones */
+}
